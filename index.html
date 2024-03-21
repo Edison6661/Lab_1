@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Examples</title>
+
+<style>
+/* Styles for links */
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* General body style */
+body {
+  background-color: lightblue;
+  font-family: verdana;
+  font-size: 20px;
+}
+
+/* Styles for headings */
+h1 {
+  color: white;
+  text-align: center;
+}
+
+/* Styles for images */
+img {
+  width: 100%;
+}
+
+/* Styles for tables */
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+}
+
+th, td {
+  background-color: #96D4D4;
+}
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+th:nth-child(even),
+td:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.colored-columns th:nth-child(1),
+.colored-columns td:nth-child(1) {
+  background-color: #D6EEEE;
+}
+
+.colored-columns th:nth-child(2),
+.colored-columns td:nth-child(2) {
+  background-color: pink;
+}
+</style>
+
+</head>
+<body>
+
+<h1>HTML Examples</h1>
+
+<!-- Links, Images, Paragraphs -->
+<h2>Links, Images, Paragraphs</h2>
+<p>Мій перший параграф.</p>
+<a href="https://w3schoolsua.github.io/">Це посилання</a>
+<img src="../images/img_girl.jpg">
+<img src="../images/img_girl.jpg" width="500" height="600">
+<img src="../images/img_girl.jpg" alt="Дівчина в жакеті">
+<img src="img_typo.jpg" alt="Дівчина в жакеті">
+<p style="color:red">Це параграф червоного кольору.</p>
+
+<!-- Image Maps -->
+<h2>Image Maps</h2>
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Комп’ютер" href="computer.html">
+  <area shape="rect" coords="290,172,333,250" alt="Телефон" href="phone.html">
+  <area shape="circle" coords="337,300,44" alt="Кава" href="coffee.html">
+</map>
+
+<!-- Background Image -->
+<h2>Background Image</h2>
+<div style="background-image: url('img_girl.jpg');"></div>
+
+<!-- Responsive Images -->
+<h2>Responsive Images</h2>
+<picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg">
+</picture>
+
+<!-- Favicon -->
+<h2>Favicon</h2>
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+<!-- Tables -->
+<h2>Tables</h2>
+<table style="width:100%">
+  <tr>
+    <th>Ім'я</th>
+    <th>Прізвище</th>
+    <th>Вік</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+<!-- Lists -->
+<h2>Lists</h2>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<ol>
+  <li>Кава</li>
+  <li>Чай</li>
+  <li>Молоко</li>
+</ol>
+
+<dl>
+  <dt>Кава</dt>
+  <dd>- чорний гарячий напій</dd>
+  <dt>Молоко</dt>
+  <dd>- білий холодний напій</dd>
+</dl>
+
+<!-- Additional Styles for Tables -->
+<h2>Additional Table Styles</h2>
+<table class="colored-columns">
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+  </tr>
+</table>
+
+</body>
+</html>
